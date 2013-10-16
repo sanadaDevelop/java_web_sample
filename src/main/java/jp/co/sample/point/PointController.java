@@ -18,6 +18,6 @@ public class PointController {
             return "home";
         }
         model.addAttribute("point", form.getPoint());
-        return "menu";
+        return "point";
     }
 }

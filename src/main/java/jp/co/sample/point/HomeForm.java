@@ -12,13 +12,13 @@ public class HomeForm implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@NotEmpty
-    private Integer point;
+    private String point;
 
-    public Integer getPoint() {
+    public String getPoint() {
         return point;
     }
 
-    public void setPoint(Integer point) {
+    public void setPoint(String point) {
         this.point = point;
     }
 

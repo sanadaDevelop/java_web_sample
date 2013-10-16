@@ -5,7 +5,7 @@
 <body>
   <h1>ようこそHomeページへ !</h1>
   <p>現在時刻は「 ${date}」です。</p>
-  <spring:url value="/sample/point var="action" />
+  <spring:url value="/sample/point" var="action" />
   <form:form modelAttribute="homeForm" action="${action}">
     <form:label path="point">付与するポイントは？</form:label>
     <form:input path="point" />
