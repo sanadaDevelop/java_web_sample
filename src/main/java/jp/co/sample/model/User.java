@@ -2,7 +2,8 @@ package jp.co.sample.model;
 
 public class User {
 	private Integer id;
-    public Integer getId() {
+
+	public Integer getId() {
 		return id;
 	}
 
