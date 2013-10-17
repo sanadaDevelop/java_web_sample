@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC
+  "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="jp.co.sample.model.User" alias="User" />
+	</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="org.h2.Driver" />
+				<!-- property name="url" value="jdbc:h2:mem:~/test;MODE=MYSQL;DB_CLOSE_DELAY=-1" / -->
+				<property name="url" value="jdbc:h2:tcp://localhost/~/test" />
+				
+				<property name="username" value="sa" />
+				<property name="password" value="" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="jp/co/sample/model/mapper/user-mapper.xml" />
+	</mappers>
+</configuration>

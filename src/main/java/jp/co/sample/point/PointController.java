@@ -13,11 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PointController {
 
 	@RequestMapping
-    public String index(@ModelAttribute @Valid HomeForm form, BindingResult result, Model model) {
-        if(result.hasErrors()) {
-            return "home";
-        }
-        model.addAttribute("point", form.getPoint());
-        return "point";
-    }
+	public String index(@ModelAttribute @Valid HomeForm form,
+			BindingResult result, Model model) {
+		if (result.hasErrors()) {
+			return "home";
+		}
+		model.addAttribute("point", form.getPoint());
+		return "point";
+	}
 }
