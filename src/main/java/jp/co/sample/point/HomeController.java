@@ -28,9 +28,6 @@ public class HomeController {
 
 		UserDao dao = new UserDao();
 		List<User> list = dao.all();
-		for (User user : list) {
-			System.out.println("Name:" + user.getName());
-		}
 		model.addAttribute("userList", list);
 		return "home";
 	}
