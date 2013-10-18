@@ -1,11 +1,12 @@
 <html>
 <head>
   <title>Home</title>
+  <%@ taglib prefix="hello" uri="../hello.tld"  %>
 </head>
 <body>
   <h1>ようこそHomeページへ !</h1>
   <p>現在時刻は「 ${date}」です。</p>
-
+  <p><hello:sayHello /></p>
   <spring:url value="/sample/point" var="action" />
   <form:form modelAttribute="homeForm" action="${action}">
     <select id="users">
