@@ -1,0 +1,9 @@
+CREATE TABLE USERS(id INT PRIMARY KEY,
+   NAME VARCHAR(255));
+
+CREATE TABLE POINT(id INT PRIMARY KEY,
+   point int(11), user_id int(11));
+
+CREATE TABLE POINT_HISTORY(id INT PRIMARY KEY,
+   point int(11), user_id int(11),
+   created_at DATETIME);
