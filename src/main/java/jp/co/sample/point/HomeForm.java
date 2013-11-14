@@ -13,6 +13,9 @@ public class HomeForm implements Serializable {
 
 	@NotEmpty
 	private String point;
+	
+	@NotEmpty
+	private String users;
 
 	public String getPoint() {
 		return point;
@@ -21,5 +24,13 @@ public class HomeForm implements Serializable {
 	public void setPoint(String point) {
 		this.point = point;
 	}
+
+    public String getUsers() {
+        return users;
+    }
+
+    public void setUsers(String users) {
+        this.users = users;
+    }
 
 }

@@ -2,7 +2,9 @@ package jp.co.sample.model;
 
 public class User {
 	private Integer id;
+    private String name;
 
+    
 	public Integer getId() {
 		return id;
 	}
@@ -10,8 +12,6 @@ public class User {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-
-	private String name;
 
 	public String getName() {
 		return name;
